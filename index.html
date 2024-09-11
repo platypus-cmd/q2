@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styled Nested List</title>
+    <style>
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .item1 {
+            font-family: Arial, sans-serif;
+            color: #FF6347;
+            font-size: 18px;
+        }
+
+        .item2 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #4682B4;
+            font-size: 18px;
+        }
+
+        .item3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #32CD32;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        hr {
+            border: 1px solid #b92424;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images.png" alt="Main Item Image" class="top-right">
+
+    <marquee behavior="scroll" direction="left" style="font-size: 24px; font-weight: bold; color: darkred;">
+        Marquee Heading: Nested List with Styles
+    </marquee>
+
+    <ol>
+        <li class="item1">
+            Main Item 1
+            <ul>
+                <li>Sub Item 1.1</li>
+                <li>Sub Item 1.2</li>
+            </ul>
+        </li>
+        <hr>
+
+        <li class="item2">
+            Main Item 2
+            <ul>
+                <li>Sub Item 2.1</li>
+                <li>Sub Item 2.2</li>
+            </ul>
+        </li>
+        <hr>
+
+        <li class="item3">
+            Main Item 3
+            <ul>
+                <li>Sub Item 3.1</li>
+                <li>Sub Item 3.2</li>
+            </ul>
+        </li>
+        <hr>
+    </ol>
+
+</body>
+</html>
